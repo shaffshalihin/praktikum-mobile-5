@@ -8,15 +8,15 @@ Lab Pemrograman Mobile 5
 
 ## Alur pengumpulan tugas ke repositori ini:
 
-1. *Fork* repositori ini
+1. **Fork** repositori ini
 
-2. *Clone* repositori hasil *fork* anda
+2. **Clone** repositori hasil **fork** anda
 
    sh
 
    git clone https://github.com/YOUR_USERNAME/praktikum-mobile-5.git
 
-3. Setelah anda *clone, masuk ke folder hasil **clone* tersebut lalu buat *branch* dengan nama *NIM* anda
+3. Setelah anda **clone**, masuk ke folder hasil **clone** tersebut lalu buat **branch** dengan nama **NIM** anda
    
    sh
 
@@ -26,8 +26,8 @@ Lab Pemrograman Mobile 5
    git config user.name USERNAME_GITHUB
    git config user.email EMAIL_GITHUB
 
-4. Setelah masuk ke dalam Folder praktikum-mobile-5, Masuk ke dalam folder dengan NIM anda
-5. Didalam folder tersebut, buat sebuah folder dengan nama *Praktikum-n, **n* = praktikum keberapa
+4. Setelah masuk ke dalam Folder praktikum-mobile-5, Masuk ke dalam folder dengan **NIM** anda
+5. Didalam folder tersebut, buat sebuah folder dengan nama **Praktikum-n**, **n** = praktikum keberapa
    sh
 
    mkdir "Praktikum-n"
@@ -38,8 +38,8 @@ Lab Pemrograman Mobile 5
 
    
 
-7. Semua file untuk tugas praktikum ke-*n, disimpan kedalam folder **Praktikum-n*
-8. Setiap membuat file atau melakukan perubahan, lakukan proses *commit* dengan pesan yang deskriptif
+7. Semua file untuk tugas praktikum ke-**n**, disimpan kedalam folder **Praktikum-n**
+8. Setiap membuat file atau melakukan perubahan, lakukan proses **commit** dengan pesan yang deskriptif
 
    sh
 
@@ -85,7 +85,7 @@ Lab Pemrograman Mobile 5
    #7. Atur waktu expiration token anda (sesuai keinginan anda)
    #8. Pada select scope, ceklis box repo
    #9. Klik generate new token
-   #10. Pastikan untuk meng-copy token anda dan menyimpannya, karena token hanya bisa diliat sekali (*Jika hilang, buat token baru)
+   #10. Pastikan untuk meng-copy token anda dan menyimpannya, karena token hanya bisa diliat sekali (**Jika hilang, buat token baru**)
 
    
 
