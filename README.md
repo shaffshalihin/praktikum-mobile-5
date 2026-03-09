@@ -26,7 +26,7 @@ Lab Pemrograman Mobile 5
    git config user.name USERNAME_GITHUB
    git config user.email EMAIL_GITHUB
 
-4. Setelah masuk ke dalam Folder Lab-AP-06, Masuk ke dalam folder dengan NIM anda
+4. Setelah masuk ke dalam Folder praktikum-mobile-5, Masuk ke dalam folder dengan NIM anda
 5. Didalam folder tersebut, buat sebuah folder dengan nama *Praktikum-n, **n* = praktikum keberapa
    sh
 
