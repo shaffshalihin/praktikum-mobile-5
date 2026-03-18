@@ -10,6 +10,7 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ProfileActivity extends AppCompatActivity {
+
     Button btnEditProfile;
     TextView tvName, tvUsername, headerUsername, tvBio;
     ImageView imgProfile;

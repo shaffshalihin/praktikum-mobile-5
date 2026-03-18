@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- TOP BAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="14dp"
+        android:gravity="center_vertical"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_lock"
+                android:layout_marginEnd="5dp"/>
+
+            <TextView
+                android:id="@+id/tvToolbarUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aansyawaluddinn"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_arrow_down"
+                android:layout_marginStart="2dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_add_thread"
+            android:layout_marginEnd="14dp"
+            android:padding="2dp"/>
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_menu"
+            android:padding="2dp"/>
+    </LinearLayout>
+
+    <!-- SCROLLABLE BODY -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- PROFILE HEADER -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="16dp"
+                android:paddingTop="8dp">
+
+                <!-- Nama + Foto -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/tvName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Aan Syawaluddin"
+                                android:textColor="#000000"
+                                android:textSize="20sp"
+                                android:textStyle="bold"/>
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_arrow_down"
+                                android:layout_marginStart="4dp"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvUsername"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\@aansyawaluddinn"
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:layout_marginTop="2dp"/>
+                    </LinearLayout>
+
+                    <!-- Foto + tombol + biru -->
+                    <FrameLayout
+                        android:layout_width="86dp"
+                        android:layout_height="86dp">
+
+                        <ImageView
+                            android:id="@+id/imgProfilePicture"
+                            android:layout_width="82dp"
+                            android:layout_height="82dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle_stroke_bg"
+                            android:clipToOutline="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_default_avatar" />
+
+                        <ImageView
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:src="@drawable/ic_add_circle_blue"
+                            android:layout_gravity="bottom|end"/>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <!-- Bio -->
+                <TextView
+                    android:id="@+id/tvBio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HalaMadridYNadaMas\nSMAN 3 Makassar\nUniversitas Hasanuddin\nSistem Informasi 22\n&quot;RUN IS FUN&quot;"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:layout_marginTop="10dp"/>
+
+                <!-- Website -->
+                <TextView
+                    android:id="@+id/tvWebsite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="linktr.ee/aansyawaluddin"
+                    android:textColor="#1877F2"
+                    android:textSize="14sp"
+                    android:layout_marginTop="3dp"
+                    android:visibility="visible"/>
+
+                <!-- Running Threads badge -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_badge_bg"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="8dp">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:src="@drawable/ic_threads_small"
+                        android:layout_marginEnd="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Running Threads"
+                        android:textSize="13sp"
+                        android:textColor="#000000"/>
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/ic_add_circle_small"
+                        android:layout_marginStart="6dp"/>
+                </LinearLayout>
+
+                <!-- Pengikut -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="10dp">
+
+                    <FrameLayout
+                        android:layout_width="46dp"
+                        android:layout_height="22dp">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/ic_default_avatar"
+                            android:background="@drawable/circle_bg_gray"
+                            android:clipToOutline="true"
+                            android:layout_gravity="start|center_vertical"/>
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/ic_default_avatar"
+                            android:background="@drawable/circle_bg_gray"
+                            android:clipToOutline="true"
+                            android:layout_gravity="end|center_vertical"/>
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tvFollowerCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="159 pengikut"
+                        android:textColor="#888888"
+                        android:textSize="13sp"
+                        android:layout_marginStart="6dp"/>
+                </LinearLayout>
+
+                <!-- Edit profil + Bagikan profil -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="4dp">
+
+                    <Button
+                        android:id="@+id/btnEditProfile"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:text="Edit profil"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0"
+                        android:background="@drawable/btn_outline_rounded"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:layout_marginEnd="6dp"
+                        style="@style/Widget.AppCompat.Button"/>
+
+                    <Button
+                        android:id="@+id/btnShareProfile"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:text="Bagikan profil"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0"
+                        android:background="@drawable/btn_outline_rounded"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        style="@style/Widget.AppCompat.Button"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- SOROTAN / HIGHLIGHTS -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="12dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <!-- Baru -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginEnd="18dp">
+
+                        <FrameLayout
+                            android:layout_width="66dp"
+                            android:layout_height="66dp">
+
+                            <View
+                                android:layout_width="66dp"
+                                android:layout_height="66dp"
+                                android:background="@drawable/circle_bg_gray"/>
+
+                            <ImageView
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:src="@drawable/ic_add_circle"
+                                app:tint="#555555"
+                                android:layout_gravity="center"/>
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Baru"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+
+                    <!-- Spesial -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginEnd="18dp">
+
+                        <ImageView
+                            android:layout_width="66dp"
+                            android:layout_height="66dp"
+                            android:src="@drawable/ic_highlight_placeholder"
+                            android:background="@drawable/circle_stroke_highlight"
+                            android:clipToOutline="true"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Spesial"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+
+                    <!-- ngoding -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginEnd="18dp">
+
+                        <ImageView
+                            android:layout_width="66dp"
+                            android:layout_height="66dp"
+                            android:src="@drawable/ic_highlight_placeholder2"
+                            android:background="@drawable/circle_stroke_highlight"
+                            android:clipToOutline="true"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ngoding"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+
+                    <!-- Run -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginEnd="18dp">
+
+                        <ImageView
+                            android:layout_width="66dp"
+                            android:layout_height="66dp"
+                            android:src="@drawable/ic_highlight_placeholder3"
+                            android:background="@drawable/circle_stroke_highlight"
+                            android:clipToOutline="true"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Run"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- TAB BAR (grid | reels | tagged) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/tab_selected_indicator">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/ic_tab_grid"
+                        app:tint="#000000"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/ic_tab_video"
+                        app:tint="#AAAAAA"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/ic_tab_tag"
+                        app:tint="#AAAAAA"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="#DBDBDB"/>
+
+            <!-- GRID FOTO 3 KOLOM -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <ImageView android:layout_width="0dp" android:layout_height="130dp" android:layout_weight="1" android:scaleType="centerCrop" android:src="@drawable/ic_post_placeholder" android:layout_marginEnd="1dp"/>
+                    <ImageView android:layout_width="0dp" android:layout_height="130dp" android:layout_weight="1" android:scaleType="centerCrop" android:src="@drawable/ic_post_placeholder2" android:layout_marginEnd="1dp"/>
+                    <ImageView android:layout_width="0dp" android:layout_height="130dp" android:layout_weight="1" android:scaleType="centerCrop" android:src="@drawable/ic_post_placeholder3"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <ImageView android:layout_width="0dp" android:layout_height="130dp" android:layout_weight="1" android:scaleType="centerCrop" android:src="@drawable/ic_post_placeholder2" android:layout_marginEnd="1dp"/>
+                    <ImageView android:layout_width="0dp" android:layout_height="130dp" android:layout_weight="1" android:scaleType="centerCrop" android:src="@drawable/ic_post_placeholder3" android:layout_marginEnd="1dp"/>
+                    <ImageView android:layout_width="0dp" android:layout_height="130dp" android:layout_weight="1" android:scaleType="centerCrop" android:src="@drawable/ic_post_placeholder"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <ImageView android:layout_width="0dp" android:layout_height="130dp" android:layout_weight="1" android:scaleType="centerCrop" android:src="@drawable/ic_post_placeholder3" android:layout_marginEnd="1dp"/>
+                    <ImageView android:layout_width="0dp" android:layout_height="130dp" android:layout_weight="1" android:scaleType="centerCrop" android:src="@drawable/ic_post_placeholder" android:layout_marginEnd="1dp"/>
+                    <ImageView android:layout_width="0dp" android:layout_height="130dp" android:layout_weight="1" android:scaleType="centerCrop" android:src="@drawable/ic_post_placeholder2"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="60dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- BOTTOM NAVIGATION -->
+    <View android:layout_width="match_parent" android:layout_height="0.7dp" android:background="#DBDBDB"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#FFFFFF"
+        app:itemIconTint="@drawable/bottom_nav_selector"
+        app:itemRippleColor="@null"
+        app:labelVisibilityMode="unlabeled"
+        app:selectedItemId="@id/nav_profile"
+        app:menu="@menu/bottom_nav_menu"
+        app:elevation="0dp"/>
+
+</LinearLayout>
