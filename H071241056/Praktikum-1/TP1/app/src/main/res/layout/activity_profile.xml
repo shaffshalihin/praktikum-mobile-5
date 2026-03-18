@@ -668,6 +668,7 @@
                             android:src="@drawable/duplicate"
                             android:layout_gravity="end"
                             android:layout_margin="5dp"
+                            app:tint="@color/white"/>
                             android:tint="@color/white"/>
 
                     </FrameLayout>
