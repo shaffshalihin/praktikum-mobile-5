@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:elevation="4dp"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Close"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="New Post"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#0095F6"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Preview Image -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#F0F0F0"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/ivPreview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/tvNoImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="No image selected"
+                    android:textColor="#888"
+                    android:textSize="14sp"/>
+
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btnSelectImage"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Select from Gallery"
+                android:backgroundTint="#444444"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Caption -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add caption..."
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:counterEnabled="true"
+                app:counterMaxLength="2200"
+                android:layout_marginBottom="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCaption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:gravity="top"
+                    android:maxLength="2200"
+                    android:inputType="textMultiLine"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnUpload"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:text="Upload"
+                android:backgroundTint="@color/black"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
