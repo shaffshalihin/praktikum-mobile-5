@@ -1,0 +1,430 @@
+[
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_post8.png.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\post8.png"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_story7.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\story7.jpg"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_profile2.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\profile2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_post_other1.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\post_other1.jpg"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_story_ring_large.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\story_ring_large.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_post1.png.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\post1.png"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_profile9.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\profile9.jpg"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_back.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_back.xml"
+    },
+    {
+        "merged": "com.example.instagramclone.app-merged_res-33:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.instagramclone.app-main-35:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_btn_outline_rounded.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\btn_outline_rounded.xml"
+    },
+    {
+        "merged": "com.example.instagramclone.app-merged_res-33:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.instagramclone.app-main-35:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_post_other8.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\post_other8.jpg"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_play_small.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_play_small.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_post7.png.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\post7.png"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_nav_search.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_nav_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_story6.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\story6.jpg"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_profile8.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\profile8.jpg"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_home.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_home.xml"
+    },
+    {
+        "merged": "com.example.instagramclone.app-merged_res-33:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.instagramclone.app-main-35:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_post_other7.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\post_other7.jpg"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_img_post5.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\img_post5.jpg"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_profile1.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\profile1.jpg"
+    },
+    {
+        "merged": "com.example.instagramclone.app-merged_res-33:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.instagramclone.app-main-35:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\layout_activity_post_detail.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\layout\\activity_post_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_more.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_more.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_post_other10.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\post_other10.jpg"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\layout_activity_home.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_btn_share.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\btn_share.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_close.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_close.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_story5.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\story5.jpg"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_img_post4.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\img_post4.jpg"
+    },
+    {
+        "merged": "com.example.instagramclone.app-merged_res-33:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.instagramclone.app-main-35:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_send.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_send.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\layout_activity_story_detail.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\layout\\activity_story_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_story2.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\story2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_tag.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_tag.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_grid.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_grid.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_profile3.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\profile3.jpg"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_menu.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\layout_activity_profile.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_arrow_down.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_arrow_down.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_person_male.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\person_male.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_add.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_add.xml"
+    },
+    {
+        "merged": "com.example.instagramclone.app-merged_res-33:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.instagramclone.app-main-35:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.instagramclone.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.instagramclone.app-main-35:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_post2.png.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\post2.png"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_home_filled.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_home_filled.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_profile6.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\profile6.jpg"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_post_other2.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\post_other2.jpg"
+    },
+    {
+        "merged": "com.example.instagramclone.app-merged_res-33:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.instagramclone.app-main-35:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_lock.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_lock.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_img_post2.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\img_post2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_play.png.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\play.png"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\layout_activity_upload_post.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\layout\\activity_upload_post.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_post_other5.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\post_other5.jpg"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_send.png.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\send.png"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_story_ring.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\story_ring.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_story4.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\story4.jpg"
+    },
+    {
+        "merged": "com.example.instagramclone.app-merged_res-33:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.instagramclone.app-main-35:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.instagramclone.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.instagramclone.app-main-35:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_post5.png.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\post5.png"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\layout_item_story.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\layout\\item_story.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_default_avatar.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_default_avatar.xml"
+    },
+    {
+        "merged": "com.example.instagramclone.app-merged_res-33:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.instagramclone.app-main-35:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_add_circle.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\add_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_plus.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_plus.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_profile5.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\profile5.jpg"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_post_other4.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\post_other4.jpg"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_img_post1.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\img_post1.jpg"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_story3.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\story3.jpg"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_post4.png.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\post4.png"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_comment.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_comment.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_profile4.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\profile4.jpg"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_image_placeholder.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_image_placeholder.xml"
+    },
+    {
+        "merged": "com.example.instagramclone.app-merged_res-33:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.instagramclone.app-main-35:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\layout_item_feed.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\layout\\item_feed.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_heart_filled.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_heart_filled.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_post6.png.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\post6.png"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_btn_solid_black.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\btn_solid_black.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\layout_item_grid_post.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\layout\\item_grid_post.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\layout_activity_edit_profile.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\layout\\activity_edit_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_bookmark.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_bookmark.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_post_other6.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\post_other6.jpg"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_reels.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_reels.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_add_person.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_add_person.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_post_other3.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\post_other3.jpg"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_profile7.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\profile7.jpg"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_post3.png.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\post3.png"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_profile_placeholder.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_profile_placeholder.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_post10.png.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\post10.png"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_bookmark_filled.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_bookmark_filled.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_btn_outline.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\btn_outline.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_post_other9.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\post_other9.jpg"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_story1.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\story1.jpg"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_heart.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_heart.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_img_post3.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\img_post3.jpg"
+    },
+    {
+        "merged": "com.example.instagramclone.app-merged_res-33:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.instagramclone.app-main-35:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.instagramclone.app-merged_res-33:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.instagramclone.app-main-35:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_input_border.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\input_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_profile10.jpg.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\profile10.jpg"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_ic_search.xml.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\ic_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-merged_res-33:\\drawable_post9.png.flat",
+        "source": "C:\\Users\\andieryn\\.gradle\\daemon\\8.7\\com.example.instagramclone.app-main-35:\\drawable\\post9.png"
+    }
+]
