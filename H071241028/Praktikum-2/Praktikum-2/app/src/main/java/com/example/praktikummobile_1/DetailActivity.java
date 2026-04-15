@@ -53,13 +53,13 @@ public class DetailActivity extends AppCompatActivity {
 
             tvUsernameFeed.setText("fadhilahazz_"); // Sesuai permintaan gambar
             tvCaptionFeed.setText("fadhilahazz_ " + caption);
-            
+
             if (imageRes != 0) {
                 ivMainImageFeed.setImageResource(imageRes);
             } else if (imageUri != null) {
                 ivMainImageFeed.setImageURI(android.net.Uri.parse(imageUri));
             }
-            
+
             btnBackFeed.setOnClickListener(v -> finish());
 
         } else {
@@ -67,14 +67,15 @@ public class DetailActivity extends AppCompatActivity {
             layoutFeed.setVisibility(View.GONE);
             layoutStory.setVisibility(View.VISIBLE);
 
-            tvStoryName.setText(getIntent().getStringExtra("title_highlight") != null ? 
-                    getIntent().getStringExtra("title_highlight") : "m'girls");
+            tvStoryName.setText(getIntent().getStringExtra("title_highlight") != null
+                    ? getIntent().getStringExtra("title_highlight")
+                    : "m'girls");
             tvCaptionStory.setText(caption);
-            
+
             if (imageRes != 0) {
                 ivMainImageStory.setImageResource(imageRes);
             }
-
+            // tes tesssssss
             // Klik di mana saja untuk kembali (khas story)
             layoutStory.setOnClickListener(v -> finish());
         }
