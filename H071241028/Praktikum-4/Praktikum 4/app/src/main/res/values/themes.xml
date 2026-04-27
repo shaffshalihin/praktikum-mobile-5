@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Praktikum3" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="colorPrimary">@color/orange_primary</item>
+    </style>
+
+    <style name="Theme.Praktikum3" parent="Base.Theme.Praktikum3" />
+
+    <style name="CircleImage" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="RoundedImage" parent="">
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <!-- Style untuk SearchView agar teks berwarna putih -->
+    <style name="CustomSearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <!-- Warna teks yang diketik -->
+        <item name="android:editTextColor">@color/text_white</item>
+        <!-- Warna hint text -->
+        <item name="android:textColorHint">@color/text_gray</item>
+    </style>
+
+    <style name="SearchViewHintStyle" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/text_gray</item>
+    </style>
+</resources>
