@@ -73,14 +73,14 @@
                 android:clickable="true"
                 android:focusable="true" />
 
-            <!-- Emoji kamera untuk ganti foto -->
+            <!-- Ikon kamera untuk buka galeri -->
             <TextView
                 android:id="@+id/tv_ganti_foto_edit"
                 android:layout_width="36dp"
                 android:layout_height="36dp"
                 android:layout_gravity="bottom|end"
-                android:text="📷"
-                android:textSize="20sp"
+                android:text="🖼️"
+                android:textSize="18sp"
                 android:gravity="center"
                 android:background="@drawable/bg_putih_lingkaran"
                 android:elevation="4dp"
