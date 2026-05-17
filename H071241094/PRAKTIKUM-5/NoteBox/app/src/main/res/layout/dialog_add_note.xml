@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Judul" android:textColor="@color/colorTextSecondary"
+        android:textSize="13sp" android:textStyle="bold" android:layout_marginBottom="6dp"/>
+    <EditText android:id="@+id/et_note_title"
+        android:layout_width="match_parent" android:layout_height="52dp"
+        android:layout_marginBottom="14dp" android:background="@drawable/bg_input"
+        android:hint="Judul catatan..." android:paddingHorizontal="14dp"
+        android:textColor="@color/colorText" android:textColorHint="@color/colorTextSecondary"
+        android:textSize="14sp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Isi Catatan" android:textColor="@color/colorTextSecondary"
+        android:textSize="13sp" android:textStyle="bold" android:layout_marginBottom="6dp"/>
+    <EditText android:id="@+id/et_note_body"
+        android:layout_width="match_parent" android:layout_height="100dp"
+        android:layout_marginBottom="14dp" android:background="@drawable/bg_input"
+        android:hint="Tulis catatanmu di sini..." android:gravity="top"
+        android:paddingHorizontal="14dp" android:paddingVertical="10dp"
+        android:inputType="textMultiLine" android:textColor="@color/colorText"
+        android:textColorHint="@color/colorTextSecondary" android:textSize="14sp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Kategori" android:textColor="@color/colorTextSecondary"
+        android:textSize="13sp" android:textStyle="bold" android:layout_marginBottom="6dp"/>
+    <Spinner android:id="@+id/sp_category"
+        android:layout_width="match_parent" android:layout_height="52dp"
+        android:layout_marginBottom="14dp" android:background="@drawable/bg_input"
+        android:paddingHorizontal="14dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Warna" android:textColor="@color/colorTextSecondary"
+        android:textSize="13sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+    <LinearLayout android:id="@+id/ll_colors"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_marginBottom="4dp"/>
+
+</LinearLayout>

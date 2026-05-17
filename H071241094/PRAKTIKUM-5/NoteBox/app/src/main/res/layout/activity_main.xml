@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ScrollView
+            android:id="@+id/page_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:paddingHorizontal="24dp"
+                    android:paddingTop="32dp"
+                    android:paddingBottom="64dp">
+
+                    <TextView
+                        android:id="@+id/tv_home_profile_initial"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/bg_accent_circle"
+                        android:backgroundTint="@color/colorCard"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_home_user_info"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="14dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_home_profile_initial"
+                        app:layout_constraintEnd_toStartOf="@id/btn_home_notif"
+                        app:layout_constraintStart_toEndOf="@id/tv_home_profile_initial"
+                        app:layout_constraintTop_toTopOf="@id/tv_home_profile_initial">
+
+                        <TextView
+                            android:id="@+id/tv_greeting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hi, Admin"
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Minggu, 17 Mei 2026"
+                            android:textColor="#CCFFFFFF"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/btn_home_notif"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:background="@drawable/bg_accent_circle"
+                        android:backgroundTint="#26FFFFFF"
+                        android:src="@android:drawable/ic_popup_reminder"
+                        app:tint="#FFFFFF"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_home_profile_initial"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/tv_home_profile_initial"
+                        android:contentDescription="Notifikasi" />
+
+                    <TextView
+                        android:id="@+id/tv_home_slogan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="28dp"
+                        android:text="Tulis dan Temukan\nCatatan Terbaikmu!"
+                        android:textColor="#FFFFFF"
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        android:lineSpacingMultiplier="1.1"
+                        app:layout_constraintTop_toBottomOf="@id/tv_home_profile_initial"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-36dp"
+                    app:cardBackgroundColor="@color/colorBackground"
+                    app:cardCornerRadius="40dp"
+                    android:layout_marginBottom="16dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="32dp"
+                        android:paddingHorizontal="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="3"
+                            android:layout_marginBottom="32dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="120dp"
+                                android:layout_weight="1"
+                                android:layout_marginEnd="10dp"
+                                app:cardBackgroundColor="@color/colorCard"
+                                app:cardCornerRadius="20dp"
+                                app:cardElevation="3dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="12dp">
+                                    <TextView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:background="@drawable/bg_tag"
+                                        android:gravity="center"
+                                        android:text="📝"
+                                        android:textSize="18sp" />
+                                    <TextView
+                                        android:id="@+id/tv_stat_total"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:text="0"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Total"
+                                        android:textColor="@color/colorTextSecondary"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="120dp"
+                                android:layout_weight="1"
+                                android:layout_marginEnd="10dp"
+                                app:cardBackgroundColor="@color/colorCard"
+                                app:cardCornerRadius="20dp"
+                                app:cardElevation="3dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="12dp">
+                                    <TextView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:background="@drawable/bg_tag"
+                                        android:gravity="center"
+                                        android:text="⭐"
+                                        android:textSize="18sp" />
+                                    <TextView
+                                        android:id="@+id/tv_stat_fav"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:text="0"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Penting"
+                                        android:textColor="@color/colorTextSecondary"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="120dp"
+                                android:layout_weight="1"
+                                app:cardBackgroundColor="@color/colorCard"
+                                app:cardCornerRadius="20dp"
+                                app:cardElevation="3dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="12dp">
+                                    <TextView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:background="@drawable/bg_tag"
+                                        android:gravity="center"
+                                        android:text="📅"
+                                        android:textSize="18sp" />
+                                    <TextView
+                                        android:id="@+id/tv_stat_today"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:text="0"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Hari Ini"
+                                        android:textColor="@color/colorTextSecondary"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:text="Catatan Anda"
+                                android:textColor="@color/colorText"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_home_see_all"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/colorTextSecondary"
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                android:clickable="true"
+                                android:focusable="true" />
+                        </RelativeLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_home_notes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            android:nestedScrollingEnabled="false"
+                            android:layout_marginBottom="80dp"/> </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/page_notes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:visibility="gone">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="📝 Semua Catatan"
+                android:textColor="@color/colorText"
+                android:textSize="20sp" android:textStyle="bold"
+                android:layout_marginBottom="14dp"/>
+
+            <EditText
+                android:id="@+id/et_search_notes"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_input"
+                android:hint="🔍 Cari judul atau isi catatan..."
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorTextSecondary"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp"
+                android:inputType="text"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_filter_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/bg_button_accent"
+                        android:text="Semua"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:paddingHorizontal="12dp"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_filter_personal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/bg_tag"
+                        android:text="Personal"
+                        android:textColor="@color/colorTextSecondary"
+                        android:textSize="12sp"
+                        android:paddingHorizontal="12dp"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_filter_kerja"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/bg_tag"
+                        android:text="Kerja"
+                        android:textColor="@color/colorTextSecondary"
+                        android:textSize="12sp"
+                        android:paddingHorizontal="12dp"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_filter_ide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/bg_tag"
+                        android:text="Ide"
+                        android:textColor="@color/colorTextSecondary"
+                        android:textSize="12sp"
+                        android:paddingHorizontal="12dp"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_filter_penting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/bg_tag"
+                        android:text="Penting"
+                        android:textColor="@color/colorTextSecondary"
+                        android:textSize="12sp"
+                        android:paddingHorizontal="12dp"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_filter_lainnya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:background="@drawable/bg_tag"
+                        android:text="Lainnya"
+                        android:textColor="@color/colorTextSecondary"
+                        android:textSize="12sp"
+                        android:paddingHorizontal="12dp"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_all_notes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/page_settings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    app:cardBackgroundColor="@color/colorCard" app:cardCornerRadius="18dp" app:cardElevation="4dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:gravity="center_vertical" android:orientation="horizontal" android:padding="20dp">
+
+                        <TextView android:id="@+id/tv_profile_initial"
+                            android:layout_width="60dp" android:layout_height="60dp"
+                            android:background="@drawable/bg_accent_circle"
+                            android:gravity="center" android:text="A"
+                            android:textColor="#FFFFFF" android:textSize="24sp" android:textStyle="bold"/>
+
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginStart="18dp" android:orientation="vertical">
+                            <TextView android:id="@+id/tv_profile_name"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Admin" android:textColor="@color/colorText"
+                                android:textSize="17sp" android:textStyle="bold"/>
+                            <TextView android:id="@+id/tv_profile_username"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="\@admin" android:textColor="@color/colorTextSecondary"
+                                android:textSize="13sp"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp" android:background="@drawable/bg_tag"
+                                android:paddingHorizontal="10dp" android:paddingVertical="2dp"
+                                android:text="✅ Aktif" android:textColor="@color/colorAccent" android:textSize="11sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="TAMPILAN" android:textColor="@color/colorTextSecondary"
+                    android:textSize="11sp" android:textStyle="bold" android:letterSpacing="0.1"
+                    android:layout_marginBottom="8dp"/>
+                <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    app:cardBackgroundColor="@color/colorCard" app:cardCornerRadius="18dp" app:cardElevation="4dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="60dp"
+                            android:gravity="center_vertical" android:orientation="horizontal" android:paddingHorizontal="20dp">
+                            <TextView android:layout_width="36dp" android:layout_height="36dp"
+                                android:background="@drawable/bg_icon" android:gravity="center"
+                                android:text="🌙" android:textSize="18sp"/>
+                            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:layout_marginStart="14dp" android:orientation="vertical">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="Tema Gelap" android:textColor="@color/colorText" android:textSize="14sp"/>
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="Aktifkan mode gelap untuk tampilan malam"
+                                    android:textColor="@color/colorTextSecondary" android:textSize="11sp"/>
+                            </LinearLayout>
+                            <com.google.android.material.switchmaterial.SwitchMaterial
+                                android:id="@+id/sw_dark" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/colorBorder"/>
+
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="60dp"
+                            android:gravity="center_vertical" android:orientation="horizontal" android:paddingHorizontal="20dp">
+                            <TextView android:layout_width="36dp" android:layout_height="36dp"
+                                android:background="@drawable/bg_icon" android:gravity="center"
+                                android:text="🔔" android:textSize="18sp"/>
+                            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:layout_marginStart="14dp" android:orientation="vertical">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="Notifikasi" android:textColor="@color/colorText" android:textSize="14sp"/>
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="Tampilkan pengingat catatan"
+                                    android:textColor="@color/colorTextSecondary" android:textSize="11sp"/>
+                            </LinearLayout>
+                            <com.google.android.material.switchmaterial.SwitchMaterial
+                                android:id="@+id/sw_notif" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/colorBorder"/>
+
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="60dp"
+                            android:gravity="center_vertical" android:orientation="horizontal" android:paddingHorizontal="20dp">
+                            <TextView android:layout_width="36dp" android:layout_height="36dp"
+                                android:background="@drawable/bg_icon" android:gravity="center"
+                                android:text="✨" android:textSize="18sp"/>
+                            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:layout_marginStart="14dp" android:orientation="vertical">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="Animasi" android:textColor="@color/colorText" android:textSize="14sp"/>
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="Efek animasi antarmuka"
+                                    android:textColor="@color/colorTextSecondary" android:textSize="11sp"/>
+                            </LinearLayout>
+                            <com.google.android.material.switchmaterial.SwitchMaterial
+                                android:id="@+id/sw_anim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="PREFERENSI" android:textColor="@color/colorTextSecondary"
+                    android:textSize="11sp" android:textStyle="bold" android:letterSpacing="0.1"
+                    android:layout_marginBottom="8dp"/>
+                <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    app:cardBackgroundColor="@color/colorCard" app:cardCornerRadius="18dp" app:cardElevation="4dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="60dp"
+                            android:gravity="center_vertical" android:orientation="horizontal" android:paddingHorizontal="20dp">
+                            <TextView android:layout_width="36dp" android:layout_height="36dp"
+                                android:background="@drawable/bg_icon" android:gravity="center"
+                                android:text="👤" android:textSize="18sp"/>
+                            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:layout_marginStart="14dp" android:orientation="vertical">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="Username" android:textColor="@color/colorText" android:textSize="14sp"/>
+                                <TextView android:id="@+id/tv_settings_username"
+                                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="admin" android:textColor="@color/colorTextSecondary" android:textSize="12sp"/>
+                            </LinearLayout>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="🔒" android:textSize="14sp"/>
+                        </LinearLayout>
+                        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/colorBorder"/>
+
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="60dp"
+                            android:gravity="center_vertical" android:orientation="horizontal" android:paddingHorizontal="20dp">
+                            <TextView android:layout_width="36dp" android:layout_height="36dp"
+                                android:background="@drawable/bg_icon" android:gravity="center"
+                                android:text="📦" android:textSize="18sp"/>
+                            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:layout_marginStart="14dp" android:orientation="vertical">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="Penyimpanan" android:textColor="@color/colorText" android:textSize="14sp"/>
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="SharedPreferences" android:textColor="@color/colorTextSecondary" android:textSize="12sp"/>
+                            </LinearLayout>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Aktif" android:textColor="@color/colorAccent"
+                                android:textSize="12sp" android:textStyle="bold"/>
+                        </LinearLayout>
+                        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/colorBorder"/>
+
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="60dp"
+                            android:gravity="center_vertical" android:orientation="horizontal" android:paddingHorizontal="20dp">
+                            <TextView android:layout_width="36dp" android:layout_height="36dp"
+                                android:background="@drawable/bg_icon" android:gravity="center"
+                                android:text="🗑️" android:textSize="18sp"/>
+                            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:layout_marginStart="14dp" android:orientation="vertical">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="Hapus Semua Catatan" android:textColor="@color/colorText" android:textSize="14sp"/>
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="Tindakan ini tidak bisa dibatalkan"
+                                    android:textColor="@color/colorTextSecondary" android:textSize="11sp"/>
+                            </LinearLayout>
+                            <Button android:id="@+id/btn_clear_notes"
+                                android:layout_width="wrap_content" android:layout_height="32dp"
+                                android:background="@drawable/bg_danger_outline"
+                                android:text="Hapus" android:textColor="#c62828"
+                                android:textSize="12sp" android:textStyle="bold"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <Button android:id="@+id/btn_logout"
+                    android:layout_width="match_parent" android:layout_height="52dp"
+                    android:background="@drawable/bg_danger_outline_full"
+                    android:text="Keluar dari Akun"
+                    android:textColor="#c62828" android:textSize="15sp" android:textStyle="bold"
+                    android:layout_marginBottom="32dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorCard"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemTextColor="@color/nav_item_color" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="72dp"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="@color/colorAccent"
+        app:tint="@android:color/white"
+        app:elevation="6dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
