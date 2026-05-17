@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand -->
+    <color name="colorAccent">#e8650a</color>
+    <color name="colorAccent2">#f5a623</color>
+
+    <!-- Light theme -->
+    <color name="colorBackground">#f5f0e8</color>
+    <color name="colorBackground2">#ede8df</color>
+    <color name="colorCard">#ffffff</color>
+    <color name="colorText">#1a1208</color>
+    <color name="colorTextSecondary">#6b5e45</color>
+    <color name="colorBorder">#d9d0c0</color>
+
+    <!-- Danger -->
+    <color name="colorDanger">#c62828</color>
+
+    <!-- System -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
