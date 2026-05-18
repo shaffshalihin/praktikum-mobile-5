@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Praktikum3" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorPrimary">@color/orange_primary</item>
+        <item name="colorOnSurface">@color/black</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorSurfaceVariant">#F5F5F5</item>
+        <item name="colorOnSurfaceVariant">#444444</item>
+    </style>
+
+    <style name="Theme.Praktikum3" parent="Base.Theme.Praktikum3" />
+
+    <style name="CustomSearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:editTextColor">@color/black</item>
+        <item name="android:textColorHint">@color/text_dim</item>
+    </style>
+
+    <style name="CircleImage" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="RoundedImage" parent="">
+        <item name="cornerSize">12dp</item>
+    </style>
+</resources>
