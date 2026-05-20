@@ -1,23 +1,31 @@
 package com.ishmah.praktikum1;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class EditProfileActivity extends AppCompatActivity {
 
-    private ImageView ivEditFoto;
-    private TextView btnBack, btnDone, tvGantiFotoEdit;
-    private EditText etNama, etUsername, etBio, etLink, etPosts, etFollowers, etFollowing;
+    private static final String PREF_NAME    = "profile_pref";
+    private static final String KEY_NAME     = "name";
+    private static final String KEY_USERNAME = "username";
+    private static final String KEY_BIO      = "bio";
+    private static final String KEY_LINK     = "link";
+    private static final String KEY_PHOTO    = "photo_uri";
+    private static final String KEY_POSTS    = "posts";
+    private static final String KEY_FOLLOWERS  = "followers";
+    private static final String KEY_FOLLOWING  = "following";
 
-    private Uri selectedPhotoUri = null;
-    private int selectedFotoResId = R.drawable.ic_hodo_profile;
+    private CircleImageView ivEditFoto;
+    private EditText etNama, etUsername, etBio, etLink, etPosts, etFollowers, etFollowing;
+    private SharedPreferences prefs;
+    private String photoUri = "";
 
     private ActivityResultLauncher<Intent> galleryLauncher;
 
@@ -26,91 +34,75 @@ public class EditProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_profile);
 
-        // Inisialisasi view
-        ivEditFoto      = findViewById(R.id.iv_edit_foto);
-        btnBack         = findViewById(R.id.btn_back);
-        btnDone         = findViewById(R.id.btn_done);
-        tvGantiFotoEdit = findViewById(R.id.tv_ganti_foto_edit);
-        etNama          = findViewById(R.id.et_nama);
-        etUsername      = findViewById(R.id.et_username);
-        etBio           = findViewById(R.id.et_bio);
-        etLink          = findViewById(R.id.et_link);
-        etPosts         = findViewById(R.id.et_posts);
-        etFollowers     = findViewById(R.id.et_followers);
-        etFollowing     = findViewById(R.id.et_following);
+        prefs       = getSharedPreferences(PREF_NAME, MODE_PRIVATE);
+        ivEditFoto  = findViewById(R.id.iv_edit_foto);
+        etNama      = findViewById(R.id.et_nama);
+        etUsername  = findViewById(R.id.et_username);
+        etBio       = findViewById(R.id.et_bio);
+        etLink      = findViewById(R.id.et_link);
+        etPosts     = findViewById(R.id.et_posts);
+        etFollowers = findViewById(R.id.et_followers);
+        etFollowing = findViewById(R.id.et_following);
 
-        // Setup launcher untuk memilih foto dari galeri
         galleryLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             result -> {
                 if (result.getResultCode() == RESULT_OK && result.getData() != null) {
                     Uri uri = result.getData().getData();
                     if (uri != null) {
-                        selectedPhotoUri = uri;
-                        selectedFotoResId = -1;
-                        ivEditFoto.setImageURI(selectedPhotoUri);
+                        try {
+                            getContentResolver().takePersistableUriPermission(
+                                uri, Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                        } catch (Exception ignored) {}
+                        photoUri = uri.toString();
+                        ivEditFoto.setImageURI(uri);
                     }
                 }
             }
         );
 
-        // Isi field dengan data yang diterima dari MainActivity
-        Bundle extras = getIntent().getExtras();
-        if (extras != null) {
-            etNama.setText(extras.getString("nama", "HODO.id – Eat With Rhythm"));
-            etUsername.setText(extras.getString("username", "hodo.id"));
-            etBio.setText(extras.getString("bio",
-                "Kitchen/cooking\nHomemade rice bowls bento 🍴, cooked by order\nOrder via WhatsApp 📱"));
-            etLink.setText(extras.getString("link", "linktr.ee/HODO.id"));
-            etPosts.setText(extras.getString("posts", "12"));
-            etFollowers.setText(extras.getString("followers", "77"));
-            etFollowing.setText(extras.getString("following", "2"));
+        // Load saved data
+        photoUri = prefs.getString(KEY_PHOTO, "");
+        etNama.setText(prefs.getString(KEY_NAME, ""));
+        etUsername.setText(prefs.getString(KEY_USERNAME, ""));
+        etBio.setText(prefs.getString(KEY_BIO, ""));
+        etLink.setText(prefs.getString(KEY_LINK, ""));
+        etPosts.setText(prefs.getString(KEY_POSTS, ""));
+        etFollowers.setText(prefs.getString(KEY_FOLLOWERS, ""));
+        etFollowing.setText(prefs.getString(KEY_FOLLOWING, ""));
 
-            // Tampilkan foto profil saat ini
-            String fotoUri = extras.getString("foto_uri", "");
-            if (fotoUri != null && !fotoUri.isEmpty()) {
-                selectedPhotoUri = Uri.parse(fotoUri);
-                ivEditFoto.setImageURI(selectedPhotoUri);
-            } else {
-                selectedFotoResId = extras.getInt("foto", R.drawable.ic_hodo_profile);
-                ivEditFoto.setImageResource(selectedFotoResId);
-            }
+        if (!photoUri.isEmpty()) {
+            try { ivEditFoto.setImageURI(Uri.parse(photoUri)); }
+            catch (Exception ignored) {}
         }
 
-        // Klik foto atau ikon kamera → buka galeri
-        ivEditFoto.setOnClickListener(v -> bukaGaleri());
-        tvGantiFotoEdit.setOnClickListener(v -> bukaGaleri());
+        ivEditFoto.setOnClickListener(v -> openGallery());
+        findViewById(R.id.tv_ganti_foto_edit).setOnClickListener(v -> openGallery());
+        findViewById(R.id.tv_change_photo_label).setOnClickListener(v -> openGallery());
 
-        // Tombol Back → batalkan perubahan
-        btnBack.setOnClickListener(v -> finish());
+        findViewById(R.id.btn_back).setOnClickListener(v -> finish());
 
-        // Tombol Done → kirim data kembali ke MainActivity
-        btnDone.setOnClickListener(v -> {
-            Intent result = new Intent();
-            result.putExtra("nama",      etNama.getText().toString().trim());
-            result.putExtra("username",  etUsername.getText().toString().trim());
-            result.putExtra("bio",       etBio.getText().toString().trim());
-            result.putExtra("link",      etLink.getText().toString().trim());
-            result.putExtra("posts",     etPosts.getText().toString().trim());
-            result.putExtra("followers", etFollowers.getText().toString().trim());
-            result.putExtra("following", etFollowing.getText().toString().trim());
+        findViewById(R.id.btn_done).setOnClickListener(v -> {
+            prefs.edit()
+                .putString(KEY_NAME,      etNama.getText().toString().trim())
+                .putString(KEY_USERNAME,  etUsername.getText().toString().trim())
+                .putString(KEY_BIO,       etBio.getText().toString().trim())
+                .putString(KEY_LINK,      etLink.getText().toString().trim())
+                .putString(KEY_PHOTO,     photoUri)
+                .putString(KEY_POSTS,     etPosts.getText().toString().trim())
+                .putString(KEY_FOLLOWERS, etFollowers.getText().toString().trim())
+                .putString(KEY_FOLLOWING, etFollowing.getText().toString().trim())
+                .apply();
 
-            if (selectedPhotoUri != null) {
-                result.putExtra("foto_uri", selectedPhotoUri.toString());
-                result.putExtra("foto", -1);
-            } else {
-                result.putExtra("foto_uri", "");
-                result.putExtra("foto", selectedFotoResId);
-            }
-
-            setResult(RESULT_OK, result);
+            setResult(RESULT_OK);
             finish();
         });
     }
 
-    private void bukaGaleri() {
-        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+    private void openGallery() {
+        Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
         intent.setType("image/*");
+        intent.addCategory(Intent.CATEGORY_OPENABLE);
         galleryLauncher.launch(intent);
     }
 }

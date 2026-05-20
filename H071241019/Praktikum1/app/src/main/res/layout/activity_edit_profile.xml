@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white">
@@ -18,7 +19,6 @@
             android:gravity="center_vertical"
             android:layout_marginBottom="24dp">
 
-            <!-- Tombol Back (Emoji ←) -->
             <TextView
                 android:id="@+id/btn_back"
                 android:layout_width="40dp"
@@ -61,25 +61,24 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="24dp">
+            android:layout_marginBottom="16dp">
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/iv_edit_foto"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:src="@drawable/ic_hodo_profile"
-                android:scaleType="centerCrop"
-                android:background="@drawable/bg_lingkaran_abu"
+                app:civ_border_color="#DBDBDB"
+                app:civ_border_width="1dp"
                 android:clickable="true"
                 android:focusable="true" />
 
-            <!-- Ikon kamera untuk buka galeri -->
             <TextView
                 android:id="@+id/tv_ganti_foto_edit"
                 android:layout_width="36dp"
                 android:layout_height="36dp"
                 android:layout_gravity="bottom|end"
-                android:text="🖼️"
+                android:text="📷"
                 android:textSize="18sp"
                 android:gravity="center"
                 android:background="@drawable/bg_putih_lingkaran"
@@ -87,6 +86,19 @@
                 android:clickable="true"
                 android:focusable="true" />
         </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_change_photo_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Profile Photo"
+            android:textSize="14sp"
+            android:textColor="#3897F0"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true" />
 
         <!-- ==================== GARIS PEMBATAS ==================== -->
         <View
@@ -115,7 +127,7 @@
                 android:id="@+id/et_nama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="hodo.id"
+                android:hint="Your display name"
                 android:textSize="16sp"
                 android:textColor="@android:color/black"
                 android:inputType="textPersonName"
@@ -142,7 +154,7 @@
                 android:id="@+id/et_username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@hodo.id"
+                android:hint="username"
                 android:textSize="16sp"
                 android:textColor="@android:color/black"
                 android:inputType="text"
@@ -169,7 +181,7 @@
                 android:id="@+id/et_bio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Kitchen/cooking\nHomemade rice bowls bento 🍴, cooked by order\nOrder via WhatsApp 📱"
+                android:hint="Write a bio..."
                 android:textSize="14sp"
                 android:textColor="@android:color/black"
                 android:inputType="textMultiLine"
@@ -199,7 +211,7 @@
                 android:id="@+id/et_link"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="linktr.ee/HODO.id"
+                android:hint="Add a link"
                 android:textSize="14sp"
                 android:textColor="#00376b"
                 android:inputType="textUri"
@@ -236,7 +248,7 @@
                 android:id="@+id/et_posts"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="12"
+                android:hint="0"
                 android:textSize="16sp"
                 android:textColor="@android:color/black"
                 android:inputType="number"
@@ -263,7 +275,7 @@
                 android:id="@+id/et_followers"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="77"
+                android:hint="0"
                 android:textSize="16sp"
                 android:textColor="@android:color/black"
                 android:inputType="number"
@@ -290,7 +302,7 @@
                 android:id="@+id/et_following"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="2"
+                android:hint="0"
                 android:textSize="16sp"
                 android:textColor="@android:color/black"
                 android:inputType="number"

@@ -9,4 +9,6 @@
         <color name="white">#FFFFFFFF</color>
         <color name="instagram_blue">#3897F0</color>
         <color name="instagram_gray">#8e8e8e</color>
+    <color name="instagram_red">#ED4956</color>
+    <color name="instagram_dark">#262626</color>
     </resources>

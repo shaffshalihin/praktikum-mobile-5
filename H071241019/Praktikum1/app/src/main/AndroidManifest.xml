@@ -31,6 +31,11 @@
 
         <activity
             android:name=".EditProfileActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".PostDetailActivity"
             android:exported="false" />
 
         <!-- FileProvider untuk akses foto (Android 7+) -->
