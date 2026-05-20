@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_pink">
+
+    <!-- Blur bubble top-right -->
+    <View
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="-80dp"
+        android:layout_marginEnd="-80dp"
+        android:background="@drawable/bg_blur_circle_pink" />
+
+    <!-- Blur bubble bottom-left -->
+    <View
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginBottom="-70dp"
+        android:layout_marginStart="-70dp"
+        android:background="@drawable/bg_blur_circle_lavender" />
+
+    <!-- Blur bubble top-left -->
+    <View
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="top|start"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="-40dp"
+        android:background="@drawable/bg_blur_circle_lavender" />
+
+    <!-- Flower top-left -->
+    <ImageView
+        android:id="@+id/splash_flower1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="top|start"
+        android:layout_marginTop="52dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_flower_1"
+        android:alpha="0.8"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <!-- Flower top-right -->
+    <ImageView
+        android:id="@+id/splash_flower2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/ic_flower_2"
+        android:alpha="0.85"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <!-- Flower bottom-left -->
+    <ImageView
+        android:id="@+id/splash_flower3"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginBottom="160dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/ic_flower_2"
+        android:alpha="0.7"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <!-- Flower bottom-right -->
+    <ImageView
+        android:id="@+id/splash_flower4"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="18dp"
+        android:src="@drawable/ic_flower_1"
+        android:alpha="0.75"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <!-- Center content -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/splash_logo"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/ic_musecard_logo"
+            android:visibility="invisible"
+            android:layout_marginBottom="24dp" />
+
+        <!-- App name -->
+        <TextView
+            android:id="@+id/splash_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MuseCard"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="#FF6B9D"
+            android:shadowColor="#40000000"
+            android:shadowDx="2"
+            android:shadowDy="3"
+            android:shadowRadius="6"
+            android:letterSpacing="0.05"
+            android:visibility="invisible"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/splash_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Music Identity 🎵"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:textColor="#8B4563"
+            android:visibility="invisible"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Loading dots -->
+        <TextView
+            android:id="@+id/splash_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• • •"
+            android:textSize="14sp"
+            android:textColor="#FF6B9D"
+            android:letterSpacing="0.3"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</FrameLayout>

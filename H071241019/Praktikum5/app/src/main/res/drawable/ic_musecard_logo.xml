@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Background circle gradient (outer glow) -->
+    <path
+        android:pathData="M100,100m-95,0a95,95 0,1 1,190 0a95,95 0,1 1,-190 0"
+        android:fillColor="#30C77DFF" />
+
+    <!-- Main circle background -->
+    <path
+        android:pathData="M100,100m-82,0a82,82 0,1 1,164 0a82,82 0,1 1,-164 0"
+        android:fillColor="#FF6B9D" />
+
+    <!-- Inner circle highlight -->
+    <path
+        android:pathData="M100,100m-74,0a74,74 0,1 1,148 0a74,74 0,1 1,-148 0"
+        android:fillColor="#FFAAC8" />
+
+    <!-- Petal 1 (top) -->
+    <path
+        android:pathData="M100,42 C106,30 118,28 122,38 C126,48 116,58 100,62 C84,58 74,48 78,38 C82,28 94,30 100,42Z"
+        android:fillColor="#FFE0EC" />
+    <!-- Petal 2 (top-right) -->
+    <path
+        android:pathData="M138,58 C148,52 160,56 158,68 C156,78 144,82 132,72 C124,58 126,46 138,58Z"
+        android:fillColor="#FFD6E8" />
+    <!-- Petal 3 (bottom-right) -->
+    <path
+        android:pathData="M142,102 C154,100 162,110 156,120 C150,130 136,130 128,118 C122,104 128,94 142,102Z"
+        android:fillColor="#FFE0EC" />
+    <!-- Petal 4 (bottom-left) -->
+    <path
+        android:pathData="M58,102 C72,94 78,104 72,118 C64,130 50,130 44,120 C38,110 46,100 58,102Z"
+        android:fillColor="#FFD6E8" />
+    <!-- Petal 5 (top-left) -->
+    <path
+        android:pathData="M62,58 C74,46 76,58 68,72 C56,82 44,78 42,68 C40,56 52,52 62,58Z"
+        android:fillColor="#FFE0EC" />
+
+    <!-- Flower center circle -->
+    <path
+        android:pathData="M100,100m-14,0a14,14 0,1 1,28 0a14,14 0,1 1,-28 0"
+        android:fillColor="#FF6B9D" />
+    <path
+        android:pathData="M100,100m-9,0a9,9 0,1 1,18 0a9,9 0,1 1,-18 0"
+        android:fillColor="#FFFFFF" />
+
+    <!-- Music note stem (vertical line) -->
+    <path
+        android:pathData="M108,72 L108,118"
+        android:strokeWidth="7"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000" />
+
+    <!-- Music note flag -->
+    <path
+        android:pathData="M108,72 C120,76 124,86 116,94"
+        android:strokeWidth="6"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000" />
+
+    <!-- Music note head (filled oval) -->
+    <path
+        android:pathData="M100,118 C100,112 92,110 88,114 C84,118 86,126 92,128 C98,130 108,126 108,118Z"
+        android:fillColor="#FFFFFF" />
+
+    <!-- Small sparkle top-right -->
+    <path
+        android:pathData="M148,44 L150,38 L152,44 L158,46 L152,48 L150,54 L148,48 L142,46Z"
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.9" />
+
+    <!-- Small sparkle bottom-left -->
+    <path
+        android:pathData="M46,148 L47,144 L48,148 L52,149 L48,150 L47,154 L46,150 L42,149Z"
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.7" />
+
+</vector>

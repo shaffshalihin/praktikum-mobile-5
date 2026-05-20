@@ -1,152 +1,170 @@
 package com.ishmah.praktikum1;
 
 import android.content.Intent;
-import android.graphics.Typeface;
+import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ImageView ivFotoProfil;
-    private TextView tvGantiFoto, tvPosts, tvFollowers, tvFollowing, tvLink;
-    private LinearLayout btnEditProfile;
+    private static final String PREF_NAME   = "profile_pref";
+    private static final String KEY_NAME    = "name";
+    private static final String KEY_USERNAME = "username";
+    private static final String KEY_BIO     = "bio";
+    private static final String KEY_LINK      = "link";
+    private static final String KEY_PHOTO     = "photo_uri";
+    private static final String KEY_POSTS     = "posts";
+    private static final String KEY_FOLLOWERS = "followers";
+    private static final String KEY_FOLLOWING = "following";
+
+    private CircleImageView ivFotoProfil;
+    private TextView tvHeaderUsername, tvNama, tvBio, tvLink;
+    private SharedPreferences prefs;
+    private ActivityResultLauncher<Intent> editLauncher;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Inisialisasi view
-        ivFotoProfil = findViewById(R.id.iv_foto_profil);
-        tvGantiFoto = findViewById(R.id.tv_ganti_foto);
-        tvPosts = findViewById(R.id.tv_posts);
-        tvFollowers = findViewById(R.id.tv_followers);
-        tvFollowing = findViewById(R.id.tv_following);
-        tvLink = findViewById(R.id.tv_link);
-        btnEditProfile = findViewById(R.id.btn_edit_profile);
+        prefs            = getSharedPreferences(PREF_NAME, MODE_PRIVATE);
+        ivFotoProfil     = findViewById(R.id.iv_foto_profil);
+        tvHeaderUsername = findViewById(R.id.tv_header_username);
+        tvNama           = findViewById(R.id.tv_nama);
+        tvBio            = findViewById(R.id.tv_bio);
+        tvLink           = findViewById(R.id.tv_link);
 
-        // Cek data dari EditProfileActivity
-        Bundle extras = getIntent().getExtras();
-        if (extras != null) {
-            String link = extras.getString("link", "linktr.ee/HODO.id");
-            String posts = extras.getString("posts", "12");
-            String followers = extras.getString("followers", "77");
-            String following = extras.getString("following", "2");
+        editLauncher = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),
+            result -> { if (result.getResultCode() == RESULT_OK) loadProfile(); }
+        );
 
-            tvPosts.setText(posts);
-            tvFollowers.setText(followers);
-            tvFollowing.setText(following);
-            tvLink.setText(link);
+        View btnEdit   = findViewById(R.id.btn_edit_profile);
+        View badgePlus = findViewById(R.id.tv_ganti_foto);
 
-            int fotoResId = extras.getInt("foto", -1);
-            if (fotoResId != -1) {
-                ivFotoProfil.setImageResource(fotoResId);
-            }
-        }
+        btnEdit.setOnClickListener(v -> goEdit());
+        ivFotoProfil.setOnClickListener(v -> goEdit());
+        if (badgePlus != null) badgePlus.setOnClickListener(v -> goEdit());
 
-        // Klik area tombol untuk edit profile
-        btnEditProfile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, EditProfileActivity.class);
-
-                intent.putExtra("link", tvLink.getText().toString());
-                intent.putExtra("posts", tvPosts.getText().toString());
-                intent.putExtra("followers", tvFollowers.getText().toString());
-                intent.putExtra("following", tvFollowing.getText().toString());
-
-                startActivity(intent);
-            }
-        });
-
-        // Klik teks ganti foto (➕)
-        tvGantiFoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, EditProfileActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        // ========== TAB LAYOUT FUNCTIONALITY ==========
+        setupPostClicks();
         setupTabs();
     }
 
-    private void setupTabs() {
-        // Inisialisasi tab
-        LinearLayout tabPosts = findViewById(R.id.tab_posts);
-        LinearLayout tabReels = findViewById(R.id.tab_reels);
-        LinearLayout tabTagged = findViewById(R.id.tab_tagged);
-
-        // Inisialisasi konten
-        LinearLayout contentPosts = findViewById(R.id.content_posts);
-        LinearLayout contentReels = findViewById(R.id.content_reels);
-        LinearLayout contentTagged = findViewById(R.id.content_tagged);
-
-        // Ambil icon dan text dari masing-masing tab - CARA YANG LEBIH AMAN
-        ImageView iconPosts = tabPosts.findViewById(R.id.icon_posts);
-        ImageView iconReels = tabReels.findViewById(R.id.icon_reels);
-        ImageView iconTagged = tabTagged.findViewById(R.id.icon_tagged);
-
-        TextView textPosts = tabPosts.findViewById(R.id.text_posts);
-        TextView textReels = tabReels.findViewById(R.id.text_reels);
-        TextView textTagged = tabTagged.findViewById(R.id.text_tagged);
-
-        // Set default: Posts aktif
-        setActiveTab(iconPosts, iconReels, iconTagged, textPosts, textReels, textTagged, contentPosts, contentReels, contentTagged);
-
-        // Klik tab Posts
-        tabPosts.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setActiveTab(iconPosts, iconReels, iconTagged, textPosts, textReels, textTagged, contentPosts, contentReels, contentTagged);
-            }
-        });
-
-        // Klik tab Reels
-        tabReels.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setActiveTab(iconReels, iconPosts, iconTagged, textReels, textPosts, textTagged, contentReels, contentPosts, contentTagged);
-            }
-        });
-
-        // Klik tab Tagged
-        tabTagged.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setActiveTab(iconTagged, iconPosts, iconReels, textTagged, textPosts, textReels, contentTagged, contentPosts, contentReels);
-            }
-        });
+    @Override
+    protected void onResume() {
+        super.onResume();
+        loadProfile();
     }
 
-    private void setActiveTab(ImageView activeIcon, ImageView inactiveIcon1, ImageView inactiveIcon2,
-                              TextView activeText, TextView inactiveText1, TextView inactiveText2,
-                              LinearLayout activeContent, LinearLayout inactiveContent1, LinearLayout inactiveContent2) {
-        
-        // Set visibility konten
-        activeContent.setVisibility(View.VISIBLE);
-        inactiveContent1.setVisibility(View.GONE);
-        inactiveContent2.setVisibility(View.GONE);
+    private void goEdit() {
+        editLauncher.launch(new Intent(this, EditProfileActivity.class));
+    }
 
-        // Set warna icon - PAKAI ContextCompat
-        activeIcon.setColorFilter(ContextCompat.getColor(this, R.color.instagram_blue));
-        inactiveIcon1.setColorFilter(ContextCompat.getColor(this, R.color.instagram_gray));
-        inactiveIcon2.setColorFilter(ContextCompat.getColor(this, R.color.instagram_gray));
+    private void loadProfile() {
+        String name      = prefs.getString(KEY_NAME, "");
+        String username  = prefs.getString(KEY_USERNAME, "");
+        String bio       = prefs.getString(KEY_BIO, "");
+        String link      = prefs.getString(KEY_LINK, "");
+        String photoUri  = prefs.getString(KEY_PHOTO, "");
+        String posts     = prefs.getString(KEY_POSTS, "0");
+        String followers = prefs.getString(KEY_FOLLOWERS, "0");
+        String following = prefs.getString(KEY_FOLLOWING, "0");
 
-        // Set warna text
-        activeText.setTextColor(ContextCompat.getColor(this, R.color.instagram_blue));
-        inactiveText1.setTextColor(ContextCompat.getColor(this, R.color.instagram_gray));
-        inactiveText2.setTextColor(ContextCompat.getColor(this, R.color.instagram_gray));
+        tvHeaderUsername.setText(username.isEmpty() ? "username" : username);
 
-        // Set style text
-        activeText.setTypeface(null, Typeface.BOLD);
-        inactiveText1.setTypeface(null, Typeface.NORMAL);
-        inactiveText2.setTypeface(null, Typeface.NORMAL);
+        tvNama.setText(name);
+        tvNama.setVisibility(name.isEmpty() ? View.GONE : View.VISIBLE);
+
+        tvBio.setText(bio);
+        tvBio.setVisibility(bio.isEmpty() ? View.GONE : View.VISIBLE);
+
+        tvLink.setText(link);
+        tvLink.setVisibility(link.isEmpty() ? View.GONE : View.VISIBLE);
+
+        android.widget.TextView tvPosts = findViewById(R.id.tv_posts);
+        android.widget.TextView tvFollowers = findViewById(R.id.tv_followers);
+        android.widget.TextView tvFollowing = findViewById(R.id.tv_following);
+        if (tvPosts != null)     tvPosts.setText(posts.isEmpty() ? "0" : posts);
+        if (tvFollowers != null) tvFollowers.setText(followers.isEmpty() ? "0" : followers);
+        if (tvFollowing != null) tvFollowing.setText(following.isEmpty() ? "0" : following);
+
+        if (!photoUri.isEmpty()) {
+            try {
+                ivFotoProfil.setImageURI(Uri.parse(photoUri));
+            } catch (Exception ignored) {
+                ivFotoProfil.setImageResource(R.drawable.ic_hodo_profile);
+            }
+        } else {
+            ivFotoProfil.setImageResource(R.drawable.ic_hodo_profile);
+        }
+    }
+
+    private void setupPostClicks() {
+        int[] postViewIds = {
+            R.id.iv_post_1, R.id.iv_post_2, R.id.iv_post_3,
+            R.id.iv_post_4, R.id.iv_post_5, R.id.iv_post_6,
+            R.id.iv_post_7, R.id.iv_post_8, R.id.iv_post_9
+        };
+        for (int i = 0; i < postViewIds.length; i++) {
+            final int index = i;
+            View v = findViewById(postViewIds[i]);
+            if (v != null) v.setOnClickListener(view -> openPost(index));
+        }
+    }
+
+    private void openPost(int index) {
+        Intent intent = new Intent(this, PostDetailActivity.class);
+        intent.putExtra("post_index", index);
+        startActivity(intent);
+    }
+
+    private void setupTabs() {
+        LinearLayout tabPosts  = findViewById(R.id.tab_posts);
+        LinearLayout tabReels  = findViewById(R.id.tab_reels);
+        LinearLayout tabTagged = findViewById(R.id.tab_tagged);
+
+        LinearLayout cPosts  = findViewById(R.id.content_posts);
+        LinearLayout cReels  = findViewById(R.id.content_reels);
+        LinearLayout cTagged = findViewById(R.id.content_tagged);
+
+        ImageView iPosts  = findViewById(R.id.icon_posts);
+        ImageView iReels  = findViewById(R.id.icon_reels);
+        ImageView iTagged = findViewById(R.id.icon_tagged);
+
+        View indPosts  = findViewById(R.id.indicator_posts);
+        View indReels  = findViewById(R.id.indicator_reels);
+        View indTagged = findViewById(R.id.indicator_tagged);
+
+        tabPosts.setOnClickListener(v ->
+            switchTab(cPosts, cReels, cTagged, iPosts, iReels, iTagged, indPosts, indReels, indTagged));
+        tabReels.setOnClickListener(v ->
+            switchTab(cReels, cPosts, cTagged, iReels, iPosts, iTagged, indReels, indPosts, indTagged));
+        tabTagged.setOnClickListener(v ->
+            switchTab(cTagged, cPosts, cReels, iTagged, iPosts, iReels, indTagged, indPosts, indReels));
+    }
+
+    private void switchTab(LinearLayout show, LinearLayout h1, LinearLayout h2,
+                           ImageView iActive, ImageView i1, ImageView i2,
+                           View indActive, View ind1, View ind2) {
+        show.setVisibility(View.VISIBLE);
+        h1.setVisibility(View.GONE);
+        h2.setVisibility(View.GONE);
+
+        iActive.setAlpha(1.0f);
+        i1.setAlpha(0.35f);
+        i2.setAlpha(0.35f);
+
+        indActive.setVisibility(View.VISIBLE);
+        ind1.setVisibility(View.INVISIBLE);
+        ind2.setVisibility(View.INVISIBLE);
     }
 }
