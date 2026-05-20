@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.LibraryApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent_red</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="android:statusBarColor">@color/bg_header_start</item>
+        <item name="android:navigationBarColor">@color/bg_card</item>
+    </style>
+
+    <style name="GenreChip" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="chipBackgroundColor">@color/chip_selector</item>
+        <item name="chipStrokeColor">@color/chip_stroke_selector</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:textColor">@color/chip_text_selector</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="chipMinHeight">32dp</item>
+        <item name="chipCornerRadius">50dp</item>
+    </style>
+
+    <style name="FormField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/accent_red</item>
+        <item name="hintTextColor">@color/text_hint</item>
+        <item name="boxBackgroundColor">@color/bg_card</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+    </style>
+</resources>
