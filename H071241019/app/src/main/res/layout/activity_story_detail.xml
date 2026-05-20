@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- Full Screen Story Image -->
+    <ImageView
+        android:id="@+id/iv_story_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_story_1" />
+
+    <!-- Overlay Header - SEMUA SEJAJAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="top"
+        android:paddingTop="40dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:gravity="center_vertical">
+
+        <!-- Foto Profile + Username + Waktu -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_hodo_profile"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp">
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hodo.id"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 jam lalu"
+                    android:textSize="11sp"
+                    android:textColor="#80FFFFFF" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Tombol Menu dan Close -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/iv_menu"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="⋯"
+                android:textSize="24sp"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="16dp" />
+
+            <TextView
+                android:id="@+id/iv_close"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="✕"
+                android:textSize="24sp"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Overlay Bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:padding="12dp"
+        android:paddingBottom="30dp"
+        android:gravity="center_vertical">
+
+        <!-- Send Message Text Field -->
+        <EditText
+            android:id="@+id/et_send_message"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:hint="Send message"
+            android:textColorHint="#80FFFFFF"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:paddingStart="0dp"
+            android:paddingEnd="8dp" />
+
+        <!-- Like Button (Vector Asset) -->
+        <ImageView
+            android:id="@+id/iv_like"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_like"
+            app:tint="#FFFFFF"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Send Button (Vector Asset) -->
+        <ImageView
+            android:id="@+id/iv_send"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_send"
+            app:tint="#FFFFFF" />
+
+    </LinearLayout>
+
+</FrameLayout>

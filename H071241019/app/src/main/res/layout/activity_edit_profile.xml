@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ==================== HEADER ==================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <!-- Tombol Back (Emoji ←) -->
+            <TextView
+                android:id="@+id/btn_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="←"
+                android:textSize="28sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Edit Profile"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/btn_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:textSize="16sp"
+                android:textColor="#3897F0"
+                android:textStyle="bold"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <!-- ==================== FOTO PROFIL ==================== -->
+        <FrameLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:id="@+id/iv_edit_foto"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_hodo_profile"
+                android:scaleType="centerCrop"
+                android:background="@drawable/bg_lingkaran_abu"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <!-- Emoji kamera untuk ganti foto -->
+            <TextView
+                android:id="@+id/tv_ganti_foto_edit"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="bottom|end"
+                android:text="📷"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/bg_putih_lingkaran"
+                android:elevation="4dp"
+                android:clickable="true"
+                android:focusable="true" />
+        </FrameLayout>
+
+        <!-- ==================== GARIS PEMBATAS ==================== -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DBDBDB"
+            android:layout_marginBottom="16dp" />
+
+        <!-- ==================== FORM EDIT ==================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="8dp">
+
+            <!-- Name Field -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="12sp"
+                android:textColor="#8e8e8e"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/et_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hodo.id"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:inputType="textPersonName"
+                android:background="@null"
+                android:paddingVertical="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DBDBDB"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Username Field -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textSize="12sp"
+                android:textColor="#8e8e8e"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@hodo.id"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:inputType="text"
+                android:background="@null"
+                android:paddingVertical="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DBDBDB"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Bio Field -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bio"
+                android:textSize="12sp"
+                android:textColor="#8e8e8e"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/et_bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kitchen/cooking\nHomemade rice bowls bento 🍴, cooked by order\nOrder via WhatsApp 📱"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:maxLines="5"
+                android:gravity="top"
+                android:background="@null"
+                android:paddingVertical="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DBDBDB"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Link Field -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Link"
+                android:textSize="12sp"
+                android:textColor="#8e8e8e"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/et_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="linktr.ee/HODO.id"
+                android:textSize="14sp"
+                android:textColor="#00376b"
+                android:inputType="textUri"
+                android:background="@null"
+                android:paddingVertical="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DBDBDB"
+                android:layout_marginBottom="16dp" />
+
+            <!-- ==================== STATISTICS SECTION ==================== -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account Statistics"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Posts Field -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posts"
+                android:textSize="12sp"
+                android:textColor="#8e8e8e"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/et_posts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:inputType="number"
+                android:background="@null"
+                android:paddingVertical="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DBDBDB"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Followers Field -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Followers"
+                android:textSize="12sp"
+                android:textColor="#8e8e8e"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/et_followers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="77"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:inputType="number"
+                android:background="@null"
+                android:paddingVertical="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DBDBDB"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Following Field -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Following"
+                android:textSize="12sp"
+                android:textColor="#8e8e8e"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/et_following"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:inputType="number"
+                android:background="@null"
+                android:paddingVertical="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- ==================== GARIS AKHIR ==================== -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DBDBDB"
+                android:layout_marginVertical="16dp" />
+
+            <!-- ==================== OPTIONS BUTTONS ==================== -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Switch to Professional Account"
+                android:textSize="14sp"
+                android:textColor="#3897F0"
+                android:gravity="center"
+                android:background="@drawable/bg_button_gray_curvy"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Log Out"
+                android:textSize="14sp"
+                android:textColor="#ED4956"
+                android:gravity="center"
+                android:background="@drawable/bg_button_gray_curvy"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <!-- ==================== VERSION ==================== -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Version 1.0.0"
+                android:textSize="12sp"
+                android:textColor="#8e8e8e"
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
